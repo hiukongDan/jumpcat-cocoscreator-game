@@ -1,0 +1,81 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "lifeAnim",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 3,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": "2",
+  "curveData": {
+    "props": {
+      "position": [
+        {
+          "frame": 0,
+          "value": [
+            208,
+            609
+          ],
+          "curve": "cubicInOut"
+        },
+        {
+          "frame": 1,
+          "value": [
+            208,
+            600
+          ],
+          "curve": "cubicInOut"
+        },
+        {
+          "frame": 2,
+          "value": [
+            208,
+            609
+          ]
+        },
+        {
+          "frame": 3,
+          "value": [
+            208,
+            609
+          ]
+        }
+      ],
+      "scale": [
+        {
+          "frame": 2.1666666666666665,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 1,
+            "y": 1
+          }
+        },
+        {
+          "frame": 2.5,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 0.5,
+            "y": 0.5
+          }
+        },
+        {
+          "frame": 2.6666666666666665,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 1.2,
+            "y": 1.2
+          }
+        },
+        {
+          "frame": 2.8333333333333335,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 1,
+            "y": 1
+          }
+        }
+      ]
+    }
+  },
+  "events": []
+}

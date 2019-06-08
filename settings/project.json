@@ -2,16 +2,36 @@
   "assets-sort-type": "name",
   "collision-matrix": [
     [
+      false,
+      null,
       true
     ],
     [
       false,
-      false,
-      true
-    ],
-    [
       false,
       true,
+      null,
+      false
+    ],
+    [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    [
+      false,
+      false,
+      true,
+      false,
       false
     ]
   ],
@@ -33,9 +53,11 @@
   "group-list": [
     "default",
     "brick",
-    "player"
+    "player",
+    "bonus",
+    "deadzone"
   ],
-  "last-module-event-record-time": 0,
+  "last-module-event-record-time": 1559714734690,
   "simulator-orientation": false,
   "simulator-resolution": {
     "height": 640,

@@ -43,11 +43,16 @@ export default class NewClass extends cc.Component {
     @property
     pose_idle_height:number = 0.0;
 
+    @property
+    jumpAvailable:number = 2;
+    jumpCount:number;
+
     onLoad () {
         this.anim = this.node.getComponent(cc.Animation);
         this.rigidbody = this.node.getComponent(cc.RigidBody);
         this.sprite = this.node.getComponent(cc.Sprite);
         this.phyBoxCollider = this.node.getComponent(cc.PhysicsBoxCollider);
+        this.jumpCount = 0;
     }  
 
     onDisable(){
@@ -56,13 +61,15 @@ export default class NewClass extends cc.Component {
         this.node.off('idle');
     }
 
-    start () {
+    onEnable(){
         this.node.on('jump', this.jump,this);
         this.node.on('ready', this.ready, this);
         this.node.on('idle', this.idle, this);
     }
 
+
     jump(direction:cc.Vec2, power:number){
+        this.jumpCount++;
         // stop animation
         this.anim.stop();
 
@@ -136,5 +143,23 @@ export default class NewClass extends cc.Component {
         this.node.setContentSize(this.pose_jump_width, this.pose_jump_height);
         this.node.color = new cc.Color(255,255,255);
     }
-    
+
+    initialize(){
+        this.jumpCount = 0;
+        this.isGround = false;
+    }
+
+    update(dt){
+        if(this.jumpCount >= 2){
+            cc.find("Canvas/controlLayer").active = false;
+        }
+    }
+
+    decreaseLife(){
+        cc.find("Canvas/game").emit("decreaseLife");
+    }
+
+    setActive(){
+        this.node.active = true;
+    }
 }

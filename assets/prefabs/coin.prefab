@@ -12,7 +12,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "brick",
+    "_name": "coin",
     "_objFlags": 0,
     "_parent": null,
     "_children": [],
@@ -30,13 +30,10 @@
       },
       {
         "__id__": 5
-      },
-      {
-        "__id__": 6
       }
     ],
     "_prefab": {
-      "__id__": 7
+      "__id__": 6
     },
     "_opacity": 255,
     "_color": {
@@ -48,8 +45,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 150,
-      "height": 20
+      "width": 32,
+      "height": 36
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -58,8 +55,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
+      "x": 299.1,
+      "y": 615.6,
       "z": 0
     },
     "_scale": {
@@ -79,7 +76,7 @@
     },
     "_skewX": 0,
     "_skewY": 0,
-    "groupIndex": 1,
+    "groupIndex": 3,
     "_id": ""
   },
   {
@@ -91,7 +88,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "7e75a4dc-9ac9-468a-96c7-8b356e4c9cee"
+      "__uuid__": "b0bc050b-5f0d-4e83-acd9-311825f491d9"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -111,64 +108,22 @@
     "_id": ""
   },
   {
-    "__type__": "e6f7cnsS2xBd4+QOhPei4bR",
+    "__type__": "cc.Animation",
     "_name": "",
     "_objFlags": 0,
     "node": {
       "__id__": 1
     },
     "_enabled": true,
-    "_id": ""
-  },
-  {
-    "__type__": "cc.RigidBody",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 1
+    "_defaultClip": {
+      "__uuid__": "6840b687-38cb-4655-98ef-2d9787b993b0"
     },
-    "_enabled": true,
-    "_type": 0,
-    "_allowSleep": true,
-    "_gravityScale": 1,
-    "_linearDamping": 0,
-    "_angularDamping": 0,
-    "_linearVelocity": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_angularVelocity": 0,
-    "_fixedRotation": false,
-    "enabledContactListener": false,
-    "bullet": false,
-    "awakeOnLoad": true,
-    "_id": ""
-  },
-  {
-    "__type__": "cc.PhysicsBoxCollider",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 1
-    },
-    "_enabled": true,
-    "tag": 0,
-    "_density": 1,
-    "_sensor": false,
-    "_friction": 0.5,
-    "_restitution": 0,
-    "body": null,
-    "_offset": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_size": {
-      "__type__": "cc.Size",
-      "width": 150,
-      "height": 20
-    },
+    "_clips": [
+      {
+        "__uuid__": "6840b687-38cb-4655-98ef-2d9787b993b0"
+      }
+    ],
+    "playOnLoad": true,
     "_id": ""
   },
   {
@@ -182,14 +137,24 @@
     "tag": 0,
     "_offset": {
       "__type__": "cc.Vec2",
-      "x": -0.8,
-      "y": 10
+      "x": -1.5,
+      "y": -0.2
     },
     "_size": {
       "__type__": "cc.Size",
-      "width": 128.9,
-      "height": 3
+      "width": 7.6,
+      "height": 15
     },
+    "_id": ""
+  },
+  {
+    "__type__": "87cd7KnXnlF+KPaqohWh6KO",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
     "_id": ""
   },
   {
@@ -198,9 +163,9 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "d8d6f70f-fa53-4515-83c5-be765b02343b"
+      "__uuid__": "06460257-0ef0-462c-9dcd-8696116d45ff"
     },
-    "fileId": "8dMRarxsNDOavk5IjcnZ+t",
+    "fileId": "78EF9mS8xFk73TV3U31OJH",
     "sync": false
   }
 ]

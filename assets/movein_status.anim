@@ -1,6 +1,6 @@
 {
   "__type__": "cc.AnimationClip",
-  "_name": "movein",
+  "_name": "movein_status",
   "_objFlags": 0,
   "_native": "",
   "_duration": 1,
@@ -16,7 +16,7 @@
         },
         {
           "frame": 1,
-          "value": 233.7
+          "value": 225
         }
       ]
     }

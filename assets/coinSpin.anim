@@ -1,0 +1,73 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "coinSpin",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 3,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": "2",
+  "curveData": {
+    "props": {
+      "scaleX": [
+        {
+          "frame": 1.9833333333333334,
+          "value": 1,
+          "curve": "cubicInOut"
+        },
+        {
+          "frame": 2.2333333333333334,
+          "value": 0,
+          "curve": "cubicInOut"
+        },
+        {
+          "frame": 2.5,
+          "value": -1,
+          "curve": "cubicInOut"
+        },
+        {
+          "frame": 2.7666666666666666,
+          "value": 0,
+          "curve": "cubicInOut"
+        },
+        {
+          "frame": 2.9833333333333334,
+          "value": 1
+        }
+      ],
+      "position": [
+        {
+          "frame": 0,
+          "value": [
+            298,
+            616
+          ],
+          "curve": "cubicInOut"
+        },
+        {
+          "frame": 1,
+          "value": [
+            298,
+            580
+          ]
+        },
+        {
+          "frame": 2,
+          "value": [
+            298,
+            616
+          ],
+          "curve": "cubicInOut"
+        },
+        {
+          "frame": 3,
+          "value": [
+            298,
+            616
+          ]
+        }
+      ]
+    }
+  },
+  "events": []
+}
