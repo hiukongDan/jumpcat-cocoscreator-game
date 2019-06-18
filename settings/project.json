@@ -2,16 +2,36 @@
   "assets-sort-type": "name",
   "collision-matrix": [
     [
+      false,
+      null,
       true
     ],
     [
       false,
-      false,
-      true
-    ],
-    [
       false,
       true,
+      null,
+      false
+    ],
+    [
+      true,
+      true,
+      false,
+      true,
+      true
+    ],
+    [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    [
+      false,
+      false,
+      true,
+      false,
       false
     ]
   ],
@@ -33,15 +53,17 @@
   "group-list": [
     "default",
     "brick",
-    "player"
+    "player",
+    "bonus",
+    "deadzone"
   ],
-  "last-module-event-record-time": 0,
+  "last-module-event-record-time": 1560350483135,
   "simulator-orientation": false,
   "simulator-resolution": {
     "height": 640,
     "width": 960
   },
+  "start-scene": "current",
   "use-customize-simulator": true,
-  "use-project-simulator-setting": false,
-  "start-scene": "current"
+  "use-project-simulator-setting": false
 }

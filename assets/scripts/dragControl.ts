@@ -23,6 +23,7 @@ export default class NewClass extends cc.Component {
     
 
     onLoad () {
+        
     }
 
     start () {
@@ -53,7 +54,10 @@ export default class NewClass extends cc.Component {
 
     onTouchStart(event:cc.Event.EventTouch){
         this.touch = event.touch;
-
+        if(this.arrow){
+            this.arrow.destroy();
+            this.arrow = null;
+        }
         this.arrow = cc.instantiate(this.pfb_arrow);
         this.arrow.parent = this.node;
         this.arrow.position = this.node.convertToNodeSpaceAR(this.touch.getLocation());
@@ -67,9 +71,7 @@ export default class NewClass extends cc.Component {
             (startPos.y-currentPos.y) * (startPos.y-currentPos.y)));
         if(this.power > this.powerPoints[this.powerPoints.length-1])
             this.power = this.powerPoints[this.powerPoints.length-1];
-
-        
-        
+            
         // interpolating colors
 
         // arrow color
@@ -109,16 +111,20 @@ export default class NewClass extends cc.Component {
     }
 
     onTouchEnd(event){
-        if(this.arrow)
+        if(this.arrow){
             this.arrow.destroy();
+            this.arrow = null;
+        }
 
         // inform player to jump
         this.player.emit('jump',this.direction, this.power);
     }
 
     onTouchCancel(event){
-        if(this.arrow)
+        if(this.arrow){
             this.arrow.destroy();
+            this.arrow = null;
+        }
         this.player.emit('idle');
     }
 }

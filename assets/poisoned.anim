@@ -11,7 +11,7 @@
     "props": {
       "color": [
         {
-          "frame": 0.03333333333333333,
+          "frame": 0,
           "value": {
             "__type__": "cc.Color",
             "r": 183,
@@ -86,7 +86,7 @@
       "cc.Sprite": {
         "spriteFrame": [
           {
-            "frame": 0.03333333333333333,
+            "frame": 0,
             "value": {
               "__uuid__": "19f1671c-9820-4084-a2e9-5a435a87c02c"
             }
@@ -107,5 +107,11 @@
       }
     }
   },
-  "events": []
+  "events": [
+    {
+      "frame": 0.016666666666666666,
+      "func": "decreaseLife",
+      "params": []
+    }
+  ]
 }
