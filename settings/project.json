@@ -57,7 +57,11 @@
     "bonus",
     "deadzone"
   ],
+<<<<<<< HEAD
   "last-module-event-record-time": 1560350483135,
+=======
+  "last-module-event-record-time": 1559714734690,
+>>>>>>> 60708b2c2c5a2fd3c8260a91217b007d8c0e1f50
   "simulator-orientation": false,
   "simulator-resolution": {
     "height": 640,

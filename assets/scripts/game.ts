@@ -54,7 +54,10 @@ export default class NewClass extends cc.Component {
     }
 
     decreaseLife(){
+<<<<<<< HEAD
         cc.find("Canvas/sound").emit("playHurtSound");
+=======
+>>>>>>> 60708b2c2c5a2fd3c8260a91217b007d8c0e1f50
         this.status.getComponent(cc.Animation).play("decreaseLife");
     }
 
@@ -69,7 +72,10 @@ export default class NewClass extends cc.Component {
     }
 
     restart(){
+<<<<<<< HEAD
         cc.find("Canvas/sound").emit("playLandSound");
+=======
+>>>>>>> 60708b2c2c5a2fd3c8260a91217b007d8c0e1f50
         this.isDead = false;
         this.resultPanel = null;
         this.status.getComponent("statusChange").init();
